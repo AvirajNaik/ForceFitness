@@ -1,0 +1,42 @@
+.gradient-background{
+    background: linear-gradient(300deg, #e4ebef, #f9ced6, #f9b3aa);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+  .gradient-background1{
+    background: linear-gradient(300deg, hsl(210, 12%, 97%), #e5e1e1, #cdcbcb);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .logo-container {
+    width: 80px; /* Adjust according to your logo size */
+    height: 65px; /* Adjust according to your logo size */
+    position: relative;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: multiply; /* Blend mode to remove white */
+    filter: brightness(0) invert(1); /* Filter to remove white */
+}
+.featurespara1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
